@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!--
+    Name: Ville Peltonen
+    Date created: 1/11/2020
+    Most recent revision: 2/8/2020
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+         <!-- External CSS -->
+        <link href="Styles/style.css" rel="stylesheet" type="text/CSS">
+
+        <title>Calculator</title>
+    </head>
+    <body>
+        <!-- Welcome message -->
+        <div id="jumbotron-container">
+            <div class="jumbotron">
+                <h1 class="display-4">Take out calculator?</h1>
+                <button type="button" id="ok" class="btn btn-success">Sure</button>
+                <button type="button" id="no-thanks" class="btn btn-danger">No thanks</button>
+            </div>
+        </div>
+
+        <!-- Calculator -->
+        <div id="outer-container">
+            <div id="container" class="disappear">
+                <button id="clear" class="grid-item">Clear</button>
+                <button id="zero" class="grid-item number">0</button>
+                <button id="one" class="grid-item number">1</button>
+                <button id="two" class="grid-item number">2</button>
+                <button id="three" class="grid-item number">3</button>
+                <button id="four" class="grid-item number">4</button>
+                <button id="five" class="grid-item number">5</button>
+                <button id="six" class="grid-item number">6</button>
+                <button id="seven" class="grid-item number">7</button>
+                <button id="eight" class="grid-item number">8</button>
+                <button id="nine" class="grid-item number">9</button>
+                <button id="add" class="grid-item operator">+</button>
+                <button id="sub" class="grid-item operator">-</button>
+                <button id="mult" class="grid-item operator">*</button>
+                <button id="divi" class="grid-item operator">/</button>
+                <button id="equal" class="grid-item">=</button>
+                <button id="display" class="grid-item"></button>
+            </div>
+        </div>
+
+             <!-- SFX for button -->
+            <audio id="button-push" src="Audio/Button_Push_Short_3.mp3" type="audio/mpeg"></audio>
+
+            <!-- External script-->
+            <script src="Scripts/script.js" type="text/JavaScript" ></script>
+
+            <!-- jQuery, Popper.js, Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
